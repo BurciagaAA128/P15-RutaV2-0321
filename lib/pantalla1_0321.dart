@@ -8,16 +8,22 @@ class Pantalla1_0321 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Pantalla1 Burciaga"),
+        title: Text("Card p1 Burciaga0321"),
         backgroundColor: Colors.green,
       ),
       body: Center(
-        child: Column(
-          children: [
-            Container(
-              child: Text("Burciaga EJEMPLO"),
-            )
-          ], //Niños
+        child: Card(
+          elevation: 20,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+          color: Color(0xff7dbf82),
+          child: Padding(
+            padding: EdgeInsets.all(20),
+            child: Text(
+              "Card Burciaga",
+              style: TextStyle(fontSize: 30, color: Color(0xff10290f)),
+            ),
+          ),
         ),
       ),
     );

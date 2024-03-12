@@ -10,17 +10,29 @@ class Pantalla2_0321 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Pantalla 2 Burciaga0321"),
-        backgroundColor: Colors.purple,
+        backgroundColor: Color(0xff668e5c),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {}, //Si presiona botón
-              child: Text("Pantalla"),
-            )
-          ],
+        child: Container(
+          color: Color(0xff3b553b),
+          width: double.infinity,
+          height: 200,
+          child: Card(
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
+            color: Color(0xff668e5c),
+            margin: EdgeInsets.all(32),
+            child: Padding(
+              padding: EdgeInsets.all(16),
+              child: Text(
+                'Pantalla 2 Burciaga0321',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Color(0xffffffff),
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
